@@ -1,0 +1,1225 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styrkeprogram (ukeplan) – baseøvelser + støttemuskulatur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Print: gjør dette til et “flersiders” dokument */
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        .page-break {
+          break-before: page;
+          page-break-before: always;
+        }
+        a::after {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900">
+    <!-- Topbar -->
+    <header
+      class="no-print sticky top-0 z-50 border-b border-slate-200 bg-white/85 backdrop-blur"
+    >
+      <nav class="mx-auto max-w-6xl px-4 p-3">
+        <div class="flex justify-center flex-wrap gap-2 text-sm">
+          <a
+            href="#oversikt"
+            class="rounded-xl border border-slate-200 bg-white px-3 py-1.5 hover:bg-slate-100"
+            >Oversikt</a
+          >
+          <a
+            href="#dag1"
+            class="rounded-xl border border-slate-200 bg-white px-3 py-1.5 hover:bg-slate-100"
+            >Dag 1 – Overkropp A</a
+          >
+          <a
+            href="#dag2"
+            class="rounded-xl border border-slate-200 bg-white px-3 py-1.5 hover:bg-slate-100"
+            >Dag 2 – Bein A</a
+          >
+          <a
+            href="#dag3"
+            class="rounded-xl border border-slate-200 bg-white px-3 py-1.5 hover:bg-slate-100"
+            >Dag 3 – Recovery</a
+          >
+          <a
+            href="#dag4"
+            class="rounded-xl border border-slate-200 bg-white px-3 py-1.5 hover:bg-slate-100"
+            >Dag 4 – Overkropp B</a
+          >
+          <a
+            href="#dag5"
+            class="rounded-xl border border-slate-200 bg-white px-3 py-1.5 hover:bg-slate-100"
+            >Dag 5 – Bein B</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-4">
+      <!-- OVERSIKT -->
+      <section
+        id="oversikt"
+        class="scroll-mt-20 mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+      >
+        <h2 class="text-xl font-bold">Oversikt (ukeplan)</h2>
+        <p class="mt-2 text-slate-600">
+          Målet er å treffe de store løftene 2 ganger i uka i varianter/roller:
+          én dag “hovedfokus” og én dag “støtte/volum”. Det gir jevn progresjon
+          uten at dere blir helt kjørt av (spesielt rygg/lav rygg).
+        </p>
+
+        <div class="mt-5 overflow-hidden rounded-2xl border border-slate-200">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-50 text-slate-700">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Dag</th>
+                <th class="px-4 py-3 font-semibold">Fokus</th>
+                <th class="px-4 py-3 font-semibold">Hovedløft</th>
+                <th class="px-4 py-3 font-semibold">Støtteøvelser</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="px-4 py-3 font-semibold">Dag 1</td>
+                <td class="px-4 py-3">Overkropp A</td>
+                <td class="px-4 py-3">Benkpress + Sittende roing</td>
+                <td class="px-4 py-3">
+                  Nedtrekk, incline DB, cable cross, hammer curls
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Dag 2</td>
+                <td class="px-4 py-3">Bein A</td>
+                <td class="px-4 py-3">Knebøy</td>
+                <td class="px-4 py-3">
+                  Leg press, split squat, leg ext, leg curl, legger + kjerne
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Dag 3</td>
+                <td class="px-4 py-3">Recovery</td>
+                <td class="px-4 py-3">–</td>
+                <td class="px-4 py-3">
+                  Mobilitet, lett kondis, “prehab” skuldre/rygg
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Dag 4</td>
+                <td class="px-4 py-3">Overkropp B</td>
+                <td class="px-4 py-3">Skulderpress + Nedtrekk</td>
+                <td class="px-4 py-3">
+                  Benk (volum), roing (volum), lateral raise, triceps pushdown
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Dag 5</td>
+                <td class="px-4 py-3">Bein B</td>
+                <td class="px-4 py-3">Markløft</td>
+                <td class="px-4 py-3">
+                  Back extension, hamstrings, quads “lett”, kjerne
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-5 grid gap-4 md:grid-cols-3">
+          <div class="rounded-2xl bg-slate-50 p-4">
+            <div class="text-sm font-semibold">
+              Hvorfor dette er bedre enn “deadlift på ryggdag”
+            </div>
+            <p class="mt-1 text-sm text-slate-600">
+              Markløft stjeler mye av “restitusjonsbudsjettet” til bein og
+              korsrygg. Ved å gi den en egen bein-/hinge-dag får dere mer
+              kvalitet på både roing/trekk OG markløft.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4">
+            <div class="text-sm font-semibold">Volum og balanse</div>
+            <p class="mt-1 text-sm text-slate-600">
+              Overkropp blir 2 dager med press + trekk. Skuldre får både press
+              og sidehev. Bein får knebøy-dag og markløft-dag.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4">
+            <div class="text-sm font-semibold">Praktisk i gymmen</div>
+            <p class="mt-1 text-sm text-slate-600">
+              Mange av deres favoritter er maskiner/kabler. Det gjør øktene
+              enkle å dele på (flere kan rotere på stasjoner).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DAG 1 -->
+      <section
+        id="dag1"
+        class="page-break scroll-mt-20 mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+      >
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-bold">
+              Dag 1 – Overkropp A (bryst/rygg/biceps)
+            </h2>
+            <p class="mt-1 text-slate-600">
+              Tung benk + tung roing. Deretter volum for bryst/rygg og biceps.
+              Dette matcher øvelsene dere liker, men i en rekkefølge som gir
+              bedre styrkeutbytte.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4 text-sm">
+            <div class="font-semibold">Tidsbruk</div>
+            <div class="text-slate-600">75–90 min</div>
+          </div>
+        </div>
+
+        <!-- Dag 1 – plan -->
+        <div class="mt-5 overflow-hidden rounded-2xl border border-slate-200">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Øvelse</th>
+                <th class="px-4 py-3 font-semibold">Sett × reps</th>
+                <th class="px-4 py-3 font-semibold">RPE</th>
+                <th class="px-4 py-3 font-semibold">Pause</th>
+                <th class="px-4 py-3 font-semibold">Notat</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="px-4 py-3 font-semibold">Benkpress</td>
+                <td class="px-4 py-3">5×3–5</td>
+                <td class="px-4 py-3">7–9</td>
+                <td class="px-4 py-3">2–4 min</td>
+                <td class="px-4 py-3">
+                  Fokus: stabilt oppsett og jevn barbane
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Sittende kabelroing</td>
+                <td class="px-4 py-3">4×6–8</td>
+                <td class="px-4 py-3">7–9</td>
+                <td class="px-4 py-3">90–150s</td>
+                <td class="px-4 py-3">
+                  Trekk albuer bak, hold brystet “stolt”
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Nedtrekk (lat pulldown)</td>
+                <td class="px-4 py-3">3×8–12</td>
+                <td class="px-4 py-3">7–9</td>
+                <td class="px-4 py-3">90s</td>
+                <td class="px-4 py-3">
+                  Trekk til øvre bryst, ikke “bak nakke”
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Incline dumbbell press</td>
+                <td class="px-4 py-3">3×8–10</td>
+                <td class="px-4 py-3">7–9</td>
+                <td class="px-4 py-3">90–150s</td>
+                <td class="px-4 py-3">
+                  Litt skrå benk, kontrollert bunnposisjon
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">
+                  Cable cross / cable crossover
+                </td>
+                <td class="px-4 py-3">2–3×12–15</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">60–90s</td>
+                <td class="px-4 py-3">Pump/strekk for bryst</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Hammer curls</td>
+                <td class="px-4 py-3">3×10–12</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">60–90s</td>
+                <td class="px-4 py-3">Kontrollert, ingen sving</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Detaljerte øvelseskort -->
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <!-- Bench -->
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Bench%20Press.jpg"
+              alt="Benkpress"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-lg font-bold">Benkpress (hovedløft)</h3>
+                <span
+                  class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold"
+                  >Bryst + triceps + fremre skulder</span
+                >
+              </div>
+
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: dere vil bli sterke. Benk er “styrke-basisen” for
+                overkroppspress og gir mest bang-for-buck.
+              </p>
+
+              <div class="mt-4 grid gap-3 text-sm">
+                <div class="rounded-2xl bg-slate-50 p-4">
+                  <div class="font-semibold">Nøkkelpunkter</div>
+                  <ul class="mt-2 list-disc pl-5 text-slate-700">
+                    <li>Skap spenning: skulderblad ned/bak, fast grep.</li>
+                    <li>Føtter i gulv, lett “bue” i ryggen, stabilt sete.</li>
+                    <li>
+                      Senke kontrollert, press eksplosivt uten å miste posisjon.
+                    </li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-4">
+                  <div class="font-semibold">Vanlige feil</div>
+                  <ul class="mt-2 list-disc pl-5 text-slate-700">
+                    <li>Albuer helt ut til siden (stress på skulder).</li>
+                    <li>“Bouncing” i brystet.</li>
+                    <li>Løse skulderblad (mister kraft og kontroll).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Seated Row -->
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Cable-seated-rows-1.png"
+              alt="Sittende kabelroing"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-lg font-bold">Sittende kabelroing</h3>
+                <span
+                  class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold"
+                  >Øvre rygg + lats + biceps</span
+                >
+              </div>
+
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: balanserer pressing, bygger “plattform” for benk
+                (skulderbladkontroll) og gir tykk rygg.
+              </p>
+
+              <div class="mt-4 grid gap-3 text-sm">
+                <div class="rounded-2xl bg-slate-50 p-4">
+                  <div class="font-semibold">Teknikk</div>
+                  <ul class="mt-2 list-disc pl-5 text-slate-700">
+                    <li>
+                      Start med skulderblad frem, trekk dem tilbake først.
+                    </li>
+                    <li>
+                      Albuer langs kroppen (lats) eller litt ut (øvre rygg) –
+                      velg én stil og hold den.
+                    </li>
+                    <li>Pause 0.5–1s i “bakposisjon”.</li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-4">
+                  <div class="font-semibold">Hvor dere skal kjenne det</div>
+                  <p class="mt-2 text-slate-700">
+                    Midt på ryggen/under skulderblad og langs siden (lats). Hvis
+                    det bare blir biceps: senk vekta og hold bedre posisjon.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lat pulldown -->
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Back%20Pull%20down.jpg"
+              alt="Nedtrekk (lat pulldown)"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-lg font-bold">Nedtrekk (Lat pulldown)</h3>
+                <span
+                  class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold"
+                  >Lats + biceps + øvre rygg</span
+                >
+              </div>
+
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: vertikal trekk gir bredde og bidrar til skulderhelse
+                når dere kombinerer med roing.
+              </p>
+
+              <div class="mt-4 grid gap-3 text-sm">
+                <div class="rounded-2xl bg-slate-50 p-4">
+                  <div class="font-semibold">Cues</div>
+                  <ul class="mt-2 list-disc pl-5 text-slate-700">
+                    <li>“Trekk albuene ned i baklomma”.</li>
+                    <li>Hold brystet oppe, lett bakoverlen (ikke sleng).</li>
+                    <li>Full strekk i toppen, kontrollert opp.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Incline DB -->
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Dumbbell-incline-bench-press-2.png"
+              alt="Incline dumbbell press"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-lg font-bold">Incline dumbbell press</h3>
+                <span
+                  class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold"
+                  >Øvre bryst + skulderstabilitet</span
+                >
+              </div>
+
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: dumbbells gir mer bevegelsesbane, utfordrer stabilitet
+                og bygger pressmuskulatur som støtter benk.
+              </p>
+
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Teknikk</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Benkvinkel: moderat skrå (ca. 20–35°).</li>
+                  <li>
+                    Håndledd stabile, senk til du får god strekk uten
+                    skuldersmerte.
+                  </li>
+                  <li>
+                    Press opp og “samle” manualene litt uten å klirre hardt.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cable crossover -->
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Personal%20Training%20at%20a%20Gym%20-%20Cable%20Crossover.JPG"
+              alt="Cable crossover"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-lg font-bold">Cable crossover</h3>
+                <span
+                  class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold"
+                  >Bryst (stretch + pump)</span
+                >
+              </div>
+
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: etter tung pressing er dette perfekt for å legge “trygt
+                volum” på bryst uten å belaste ledd like hardt.
+              </p>
+
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Oppsett</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Stå stabilt, lett fremoverlent.</li>
+                  <li>Hold en myk bøy i albuen, tenk “klem brystet”.</li>
+                  <li>
+                    Jobb gjennom komfortabel strekk, ikke la skuldrene rulle
+                    frem.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hammer curl -->
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Bicep-hammer-curl-1.png"
+              alt="Hammer curls"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-lg font-bold">Hammer curls</h3>
+                <span
+                  class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold"
+                  >Brachialis + underarm + biceps</span
+                >
+              </div>
+
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: bygger “armtykkelse” og hjelper trekkstyrke
+                (grep/albuefleksjon) uten at håndleddet vrenges som i vanlig
+                curl.
+              </p>
+
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Overarm stille, curl med albuen.</li>
+                  <li>Stopper når du mister kontroll.</li>
+                  <li>2 sek ned, 1 sek opp (kontroll).</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- DAG 2 -->
+      <section
+        id="dag2"
+        class="page-break scroll-mt-20 mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+      >
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-bold">Dag 2 – Bein A (knebøyfokus)</h2>
+            <p class="mt-1 text-slate-600">
+              Knebøy som hovedløft + maskiner for volum. Dette beholder alle
+              øvelsene dere liker, men vi “rydder” litt i rekkefølgen og legger
+              til legger/kjerne for kompletthet.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4 text-sm">
+            <div class="font-semibold">Tidsbruk</div>
+            <div class="text-slate-600">75–95 min</div>
+          </div>
+        </div>
+
+        <div class="mt-5 overflow-hidden rounded-2xl border border-slate-200">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Øvelse</th>
+                <th class="px-4 py-3 font-semibold">Sett × reps</th>
+                <th class="px-4 py-3 font-semibold">RPE</th>
+                <th class="px-4 py-3 font-semibold">Pause</th>
+                <th class="px-4 py-3 font-semibold">Notat</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="px-4 py-3 font-semibold">Knebøy (back squat)</td>
+                <td class="px-4 py-3">5×3–5</td>
+                <td class="px-4 py-3">7–9</td>
+                <td class="px-4 py-3">2–4 min</td>
+                <td class="px-4 py-3">Prioritet: dybde og tight bracing</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Leg press</td>
+                <td class="px-4 py-3">3×8–12</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">90–150s</td>
+                <td class="px-4 py-3">Trygg volumbygger for quads</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Bulgarian split squat</td>
+                <td class="px-4 py-3">3×8–10 / bein</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">90s</td>
+                <td class="px-4 py-3">Stabilitet + glute/quads</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Leg extension</td>
+                <td class="px-4 py-3">2–3×12–15</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">60–90s</td>
+                <td class="px-4 py-3">Quads “finish”</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Leg curl</td>
+                <td class="px-4 py-3">3×10–12</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">60–90s</td>
+                <td class="px-4 py-3">Hamstrings/bakside lår</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">
+                  Standing/seated calf raise
+                </td>
+                <td class="px-4 py-3">3×10–15</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">60s</td>
+                <td class="px-4 py-3">Legger (ofte glemt)</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">
+                  Kjerne (planke / dead bug)
+                </td>
+                <td class="px-4 py-3">6–8 min totalt</td>
+                <td class="px-4 py-3">–</td>
+                <td class="px-4 py-3">kort</td>
+                <td class="px-4 py-3">Støtter knebøy/markløft</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilateral%20back%20squat%20standing.jpg"
+              alt="Knebøy"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Knebøy (hovedløft)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: bygger styrke i quads, glutes og kjerne/bracing. Gir
+                stor overføringsverdi til generell styrke og idrett.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>“Pust ned i magen” og spenn (brace) før hver rep.</li>
+                  <li>Kneet følger tærne – stabil fot.</li>
+                  <li>Kontroll ned, kraft opp.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Leg%20Press%20Machine.jpg"
+              alt="Leg press"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Leg press</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: mye quad-volum uten at korsryggen tar all støyten.
+                Perfekt etter knebøy.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Teknikk</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>
+                    Full fot på plata, kontroller dybden (ingen “butt wink” på
+                    setet).
+                  </li>
+                  <li>Ikke lås knær hardt i toppen.</li>
+                  <li>Jevn tempo: 2 sek ned, 1 sek opp.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/SETAF-AF%20conducts%20sergeant%E2%80%99s%20time%20circuit%20training%20%289082703%29.jpg"
+              alt="Bulgarian split squat"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Bulgarian split squat</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: stabilitet og “side-til-side” styrke. Veldig bra støtte
+                for knebøy, og gir glutes/quads masse stimulus.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>
+                    Finn riktig avstand: når du senker deg skal du kunne holde
+                    balansen uten å tippe frem.
+                  </li>
+                  <li>
+                    Overkropp lett frem kan gi mer glute; mer oppreist gir mer
+                    quads.
+                  </li>
+                  <li>Kontrollert ned – press gjennom hele foten.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/LegExtensionMachineExercise.JPG"
+              alt="Leg extension"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Leg extension</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: isolerer quads og lar dere legge på volum med lav
+                systemisk belastning. Super “finisher”.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Tips</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>
+                    Pause 1 sek på topp (kneet strakt, men ikke hyperextend).
+                  </li>
+                  <li>Kontrollert ned (2 sek).</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm lg:col-span-2"
+          >
+            <img
+              class="h-64 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/LyingLegCurlMachineExercise.JPG"
+              alt="Leg curl"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Leg curl (bakside lår)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: knebøy trener bakside, men leg curl treffer hamstrings
+                gjennom knefleksjon – viktig for knestabilitet og
+                hamstring-utvikling.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Start med bekken stabilt, ikke svai i korsrygg.</li>
+                  <li>Full kontroll og stopp før du “slipper” vekta ned.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- DAG 3 -->
+      <section
+        id="dag3"
+        class="page-break scroll-mt-20 mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+      >
+        <h2 class="text-xl font-bold">
+          Dag 3 – Recovery / mobilitet (valgfri, men anbefalt)
+        </h2>
+        <p class="mt-2 text-slate-600">
+          Denne dagen er her for å holde dere friske og “i gang”, uten å stjele
+          energi fra styrkeøktene. Hvis dere føler dere slitne: gjør bare 20–30
+          min rolig og dra hjem.
+        </p>
+
+        <div class="mt-5 grid gap-4 lg:grid-cols-3">
+          <div class="rounded-2xl bg-slate-50 p-5">
+            <div class="text-sm font-semibold">A) Lett puls (10–20 min)</div>
+            <p class="mt-2 text-sm text-slate-700">
+              Sone 2-ish: dere skal kunne prate. Sykkel/mølle/romaskin.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-5">
+            <div class="text-sm font-semibold">B) Mobilitet (10–15 min)</div>
+            <ul class="mt-2 list-disc pl-5 text-sm text-slate-700">
+              <li>Ankel: knee-to-wall</li>
+              <li>Hofter: 90/90</li>
+              <li>Bryst/rygg: thoracic rotations</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-5">
+            <div class="text-sm font-semibold">
+              C) Skulder/rygg “prehab” (8–12 min)
+            </div>
+            <ul class="mt-2 list-disc pl-5 text-sm text-slate-700">
+              <li>Face pulls 2×15</li>
+              <li>Band pull-aparts 2×20</li>
+              <li>Lettere back extensions 2×12</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Hyperextensions-1.png"
+              alt="Back extensions"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Back extensions (lett)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: bygger utholdende ryggstrekkere og hjelper dere tåle
+                både knebøy og markløft bedre over tid.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Anbefaling på recovery-dag</div>
+                <p class="mt-2 text-slate-700">
+                  Hold det lett: 2×12, fokus på kontroll og “pump”, ikke tungt.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Triceps%20pushdown%20with%20rope%20and%20cable%201.svg"
+              alt="Face pulls / kabelarbeid"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Skulderhelse (kabel/band)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: når dere presser mye (benk/skulderpress) er det gull å
+                “mate” bakside skulder og øvre rygg med høy reps og god
+                kvalitet.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Oppsett</div>
+                <p class="mt-2 text-slate-700">
+                  Velg lette vekter, kjenn skulderblad jobbe, stopp før du
+                  mister kontroll.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- DAG 4 -->
+      <section
+        id="dag4"
+        class="page-break mt-8 scroll-mt-20 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+      >
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-bold">
+              Dag 4 – Overkropp B (skuldre + press/trekk)
+            </h2>
+            <p class="mt-1 text-slate-600">
+              Skulderpress som hovedløft, og benk som volum. Dere får også mer
+              “skulderstøtte” via sidehev og ekstra trekk.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4 text-sm">
+            <div class="font-semibold">Tidsbruk</div>
+            <div class="text-slate-600">70–90 min</div>
+          </div>
+        </div>
+
+        <div class="mt-5 overflow-hidden rounded-2xl border border-slate-200">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Øvelse</th>
+                <th class="px-4 py-3 font-semibold">Sett × reps</th>
+                <th class="px-4 py-3 font-semibold">RPE</th>
+                <th class="px-4 py-3 font-semibold">Pause</th>
+                <th class="px-4 py-3 font-semibold">Notat</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="px-4 py-3 font-semibold">
+                  Skulderpress (maskin eller manualer)
+                </td>
+                <td class="px-4 py-3">5×4–6</td>
+                <td class="px-4 py-3">7–9</td>
+                <td class="px-4 py-3">2–3 min</td>
+                <td class="px-4 py-3">
+                  Hovedløft: kontrollert ned, solid press
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Lat pulldown (tyngre)</td>
+                <td class="px-4 py-3">4×6–8</td>
+                <td class="px-4 py-3">7–9</td>
+                <td class="px-4 py-3">90–150s</td>
+                <td class="px-4 py-3">Vertikal trekk “styrkevariant”</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Benkpress (volum)</td>
+                <td class="px-4 py-3">3×6–8</td>
+                <td class="px-4 py-3">7–8</td>
+                <td class="px-4 py-3">2 min</td>
+                <td class="px-4 py-3">Ikke maks – bare god kvalitet</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Sittende roing (volum)</td>
+                <td class="px-4 py-3">3×10–12</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">90s</td>
+                <td class="px-4 py-3">Full strekk, god kontakt</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Lateral raise</td>
+                <td class="px-4 py-3">3×12–20</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">60s</td>
+                <td class="px-4 py-3">Side skulder = “bredde”</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Triceps pushdown</td>
+                <td class="px-4 py-3">3×10–15</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">60–90s</td>
+                <td class="px-4 py-3">Støtter pressstyrke</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Valgfri: face pulls</td>
+                <td class="px-4 py-3">2×15–20</td>
+                <td class="px-4 py-3">7–8</td>
+                <td class="px-4 py-3">60s</td>
+                <td class="px-4 py-3">Skulderhelse</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Shoulder-press-machine-1.png"
+              alt="Skulderpress"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Skulderpress (hovedløft)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: dere får sterkere skuldre og bedre støtte til benk.
+                Maskin er helt fint (ofte lettere å standardisere i en
+                vennegjeng).
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Hold ribbeina “nede” (ikke overdrive svai).</li>
+                  <li>Press opp i en lett bue, ikke rett “frem”.</li>
+                  <li>Kontrollert ned til komfortabel dybde.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Dumbbell-lateral-raises-1.png"
+              alt="Lateral raise"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Lateral raise</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: side delts gir mye “visuell” og funksjonell
+                skulderstyrke. Høy reps + kontroll = gull.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Løft i en “V” litt frem, ikke rett ut til siden.</li>
+                  <li>Stopp rundt skulderhøyde.</li>
+                  <li>Hold spenning hele veien (ikke slipp ned fort).</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Triceps%20pushdown%20with%20cable%201.svg"
+              alt="Triceps pushdown"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Triceps pushdown</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: triceps er ofte flaskehals i benk/skulderpress.
+                Pushdown er enkel å progresjonstyre og snill mot albuer.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Albuer låst ved siden av kroppen.</li>
+                  <li>Full strekk på bunn, kontrollert opp igjen.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Lat%20Pull%20down%20Machine.jpg"
+              alt="Lat pulldown maskin"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Lat pulldown (tyngre variant)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: dere får en “styrkevariant” av vertikal trekk. Dette
+                støtter også markløft ved å bygge lats (stabilitet rundt
+                overkropp).
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Start med skulderblad ned (“sett skuldrene”).</li>
+                  <li>Trekk til øvre bryst, stopp og kontroller tilbake.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- DAG 5 -->
+      <section
+        id="dag5"
+        class="page-break scroll-mt-20 mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+      >
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-bold">Dag 5 – Bein B (markløftfokus)</h2>
+            <p class="mt-1 text-slate-600">
+              Markløft først. Deretter ryggstrekkere og bakside lår. Vi holder
+              quad-arbeid litt lettere her for å ikke krasje med knebøydagen.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4 text-sm">
+            <div class="font-semibold">Tidsbruk</div>
+            <div class="text-slate-600">70–90 min</div>
+          </div>
+        </div>
+
+        <div class="mt-5 overflow-hidden rounded-2xl border border-slate-200">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Øvelse</th>
+                <th class="px-4 py-3 font-semibold">Sett × reps</th>
+                <th class="px-4 py-3 font-semibold">RPE</th>
+                <th class="px-4 py-3 font-semibold">Pause</th>
+                <th class="px-4 py-3 font-semibold">Notat</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="px-4 py-3 font-semibold">Markløft</td>
+                <td class="px-4 py-3">4–5×3</td>
+                <td class="px-4 py-3">7–9</td>
+                <td class="px-4 py-3">3–4 min</td>
+                <td class="px-4 py-3">Kvalitet > ego. Stopp før form ryker.</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">
+                  Back extension (tung/moderat)
+                </td>
+                <td class="px-4 py-3">3×8–12</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">90s</td>
+                <td class="px-4 py-3">Kontroll og full ROM</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Leg curl (hamstrings)</td>
+                <td class="px-4 py-3">3×10–12</td>
+                <td class="px-4 py-3">8–9</td>
+                <td class="px-4 py-3">60–90s</td>
+                <td class="px-4 py-3">Hold 1 sek i topp</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">
+                  Valgfri: Romanian deadlift (lett/moderat)
+                </td>
+                <td class="px-4 py-3">2×6–8</td>
+                <td class="px-4 py-3">7–8</td>
+                <td class="px-4 py-3">2 min</td>
+                <td class="px-4 py-3">Kun hvis dere tåler ekstra hinge</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">
+                  Lett quad “touch” (leg press/extension)
+                </td>
+                <td class="px-4 py-3">2×12</td>
+                <td class="px-4 py-3">7–8</td>
+                <td class="px-4 py-3">60–90s</td>
+                <td class="px-4 py-3">Bare for blodgjennomstrømning</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">
+                  Kjerne (farmers carry / sideplanke)
+                </td>
+                <td class="px-4 py-3">6–8 min totalt</td>
+                <td class="px-4 py-3">–</td>
+                <td class="px-4 py-3">kort</td>
+                <td class="px-4 py-3">Stabilitet for markløft</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Deadlift%20Barbell.JPG"
+              alt="Markløft"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Markløft (hovedløft)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: enorm styrkeøvelse for bakside kjede
+                (glutes/hamstrings/rygg) og generelt “hele kroppen”.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Cues</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>
+                    Stang tett inntil leggen – “dra stanga langs kroppen”.
+                  </li>
+                  <li>Spenn lats: tenk at du “klemmer armhulene”.</li>
+                  <li>Press gulvet vekk, ikke rykk stanga opp.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Hyperextensions-1.png"
+              alt="Back extensions"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Back extensions</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: gir volum til ryggstrekkere og glutes uten samme “toll”
+                som mer tung markløft. Perfekt støtteøvelse.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Tips</div>
+                <ul class="mt-2 list-disc pl-5 text-slate-700">
+                  <li>Hold nøytral rygg, beveg i hofta.</li>
+                  <li>
+                    Stopp når du mister kontroll (ikke hyperextend på topp).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Romanian-deadlift-1.png"
+              alt="Romanian deadlift"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Romanian deadlift (valgfri)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: bygger hamstrings i lang posisjon og
+                hoftehinge-kapasitet. Men: kun hvis dere restituerer bra.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Regel</div>
+                <p class="mt-2 text-slate-700">
+                  Hvis markløft føles tungt/treigt uke etter uke: dropp RDL og
+                  behold bare back extension + leg curl.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              class="h-56 w-full object-cover"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Seated-leg-curl-1.png"
+              alt="Seated leg curl"
+              loading="lazy"
+            />
+            <div class="p-5">
+              <h3 class="text-lg font-bold">Leg curl (variant)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Hvorfor: hamstrings-volum uten å belaste korsryggen. Supert
+                etter markløft.
+              </p>
+              <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm">
+                <div class="font-semibold">Utførelse</div>
+                <p class="mt-2 text-slate-700">
+                  Full kontroll. Hold 1 sekund i topp. 2 sekunder ned.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Små forbedringer: myk scrolling
+      document.documentElement.style.scrollBehavior = "smooth";
+    </script>
+  </body>
+</html>
